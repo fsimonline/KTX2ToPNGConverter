@@ -325,36 +325,21 @@ function Show-Help {
     Write-Header "HELP"
     Write-Host "  QUICK START" -ForegroundColor $C.Header
     Write-Host ""
-    Write-Host "  1. Go to " -ForegroundColor $C.Label -NoNewline
-    Write-Host "Settings [2]" -ForegroundColor $C.Key -NoNewline
-    Write-Host " and configure the following:" -ForegroundColor $C.Label
+    Write-Host "  1. Go to Settings [2] and configure:" -ForegroundColor $C.Label
     Write-Host ""
     Write-Host "     [1]  Path to nvtt_export.exe" -ForegroundColor $C.Value
-    Write-Host "          You can enter the folder path only - the tool" -ForegroundColor $C.Dim
-    Write-Host "          appends 
-vtt_export.exe automatically." -ForegroundColor $C.Dim
+    Write-Host "          Folder path is accepted - nvtt_export.exe is appended automatically." -ForegroundColor $C.Dim
+    Write-Host "     [2]  Source path - folder containing your .ktx2 files" -ForegroundColor $C.Value
+    Write-Host "     [3]  Target path - folder where .png files will be saved" -ForegroundColor $C.Value
+    Write-Host "          Created automatically if it does not exist." -ForegroundColor $C.Dim
+    Write-Host "     [4]  Overwrite ON  - existing .png files will be overwritten" -ForegroundColor $C.Value
+    Write-Host "          Overwrite OFF - existing .png files will be skipped" -ForegroundColor $C.Dim
     Write-Host ""
-    Write-Host "     [2]  Source path - the folder containing your .ktx2 files" -ForegroundColor $C.Value
-    Write-Host ""
-    Write-Host "     [3]  Target path - the folder where .png files will be saved" -ForegroundColor $C.Value
-    Write-Host "          The folder is created automatically if it does not exist." -ForegroundColor $C.Dim
-    Write-Host ""
-    Write-Host "     [4]  Overwrite - toggle ON/OFF" -ForegroundColor $C.Value
-    Write-Host "          ON  : existing .png files will be overwritten" -ForegroundColor $C.Dim
-    Write-Host "          OFF : existing .png files will be skipped" -ForegroundColor $C.Dim
-    Write-Host ""
-    Write-Host "  2. Press " -ForegroundColor $C.Label -NoNewline
-    Write-Host "[S]" -ForegroundColor $C.Key -NoNewline
-    Write-Host " to save your settings." -ForegroundColor $C.Label
-    Write-Host ""
-    Write-Host "  3. Press " -ForegroundColor $C.Label -NoNewline
-    Write-Host "[1]" -ForegroundColor $C.Key -NoNewline
-    Write-Host " in the main menu to start the conversion." -ForegroundColor $C.Label
+    Write-Host "  2. Press [S] to save your settings." -ForegroundColor $C.Label
+    Write-Host "  3. Press [1] in the main menu to start the conversion." -ForegroundColor $C.Label
     Write-Host ""
     Write-Border
-    Write-Host ""
     Write-Host "  NOTES" -ForegroundColor $C.Header
-    Write-Host ""
     Write-Host "  - All .ktx2 files in the source folder are processed" -ForegroundColor $C.Dim
     Write-Host "  - A logfile.txt is written next to this script" -ForegroundColor $C.Dim
     Write-Host "  - Settings are saved in userConfig.ini next to this script" -ForegroundColor $C.Dim
