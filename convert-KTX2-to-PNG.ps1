@@ -263,7 +263,7 @@ function Start-Conversion {
         Write-Host "  $($file.Name)" -ForegroundColor $C.Label
 
         if ((Test-Path $outFile) -and $overwrite -eq 'OFF') {
-            Write-Host "  >> Skipped" -ForegroundColor $C.Skip
+            Write-Host "  >> Skipped (overwrite is disabled)" -ForegroundColor $C.Skip
             Write-Log "Skipped: $($file.Name)"
             $skipped++
             Write-Host ""
