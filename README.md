@@ -29,18 +29,11 @@ A PowerShell command-line tool for batch converting `.ktx2` texture files from a
 
 ## Installation
 
-1. Download `Convert-KTX2-to-PNG.ps1`
-2. Place it in any folder
-3. Run it from PowerShell:
+1. Download `Convert-KTX2-to-PNG.bat` and `Convert-KTX2-to-PNG.ps1`
+2. Place both files in the same folder
+3. Double-click `Convert-KTX2-to-PNG.bat` to launch
 
-```powershell
-.\Convert-KTX2-to-PNG.ps1
-```
-
-> On first run, PowerShell may block unsigned scripts. To allow it:
-> ```powershell
-> Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
-> ```
+> Advanced users can also run the `.ps1` directly from PowerShell.
 
 ---
 
@@ -145,6 +138,7 @@ The tool works around this by copying each file to `%TEMP%` with a clean `.ktx2`
 
 | File | Description |
 |------|-------------|
+| `Convert-KTX2-to-PNG.bat` | Launcher - double-click to run |
 | `Convert-KTX2-to-PNG.ps1` | Main script |
 | `userConfig.ini` | Settings file (auto-generated on first save) |
 | `logfile.txt` | Conversion log (auto-generated) |
