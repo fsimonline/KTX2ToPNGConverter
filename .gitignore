@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/.gitignore
+/TextureConverter.zip
+/userConfig.ini
+/logfile.txt
+
+/Dataflow.svg
